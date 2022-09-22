@@ -15,7 +15,7 @@ top: 0;
 left: 0;
 right: 0;
 margin: 0 auto;
-height: 720px;
+height: 792px;
 text-align: center;
 }
 
@@ -207,7 +207,7 @@ text-align: center;
 .contenedor{
     display: flex;
     width: 100%;
-    height: 700px;
+    height: 792px;
 }
 
 html{
@@ -232,6 +232,7 @@ html{
 
 }
 .juego>h1{
+    margin-top: 15px;
     text-align: center;
     font-weight: bold;
     height: 7%;
@@ -254,7 +255,7 @@ html{
 
 #palabra_a_adivinar{
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 50px;
 }
 
@@ -353,7 +354,7 @@ html{
     .contenedor{
         
         width: 100%;
-        height: 720px;
+        height: 792px;
         flex-direction: column;
         row-gap: 50px;
     }
