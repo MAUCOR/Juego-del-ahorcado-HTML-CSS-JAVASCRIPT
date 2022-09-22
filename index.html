@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" href="imagenes/muerto.png">
+    <title>Juego del Ahorcado</title>
+</head>
+<body id="body">
+
+    <!-- apartado donde inicia la pagina -->
+    <div class="inicial" id="iniciall">
+
+        <div class="previa">
+            <button type="submit" class="button" id="iniciar"><span>Iniciar</span><i></i></button>
+            <button id="ingresarPalabra" class="button"><span>Ingresar Palabras</span><i></i></button>
+        </div>
+        <div class="acercaDe">
+            
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/maucor" target="_blank"><img class="lnk" src="imagenes/linkedin.png" alt=""></a>
+                <a href="https://api.whatsapp.com/send?phone=916657662" target="_blank"><img class="wsp" src="imagenes/whatsapp.png"></a>
+                <a href="https://github.com/MAUCOR" target="_blank"><img class="github" src="imagenes/github.png"></a>
+            </div>
+            <div class="nombre">
+                <p>Designed & Developed by: Mauricio Cordova Rubiños-2022</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- apartado para ingresar nuevas palabras -->
+    <div class="nuevasPalabrass" id="nuevasPalabras">
+        <p class="titulo">PALABRAS PARA EL AHORCADO</p>
+        <input type="text" class="texto" id="palabrasTexto" placeholder="Ingrese una palabra"></input>
+        <div class="verArray">
+            <p class="subTitulo">Palabras predeterminadas</p>
+            <textarea id="mostrarArray" class="array" readonly="readonly"></textarea>
+        </div>
+        <button class="btnNuevasPalabras" id="agregarTexto">Agregar</button>
+        <button class="btnNuevasPalabras" type="submit" id="comenzar">Comenzar</button>
+        <a href="index.html"><button class="btnNuevasPalabras" type="submit">Volver</button></a> 
+    </div>
+
+    <!-- apartado del juego del ahorcado -->
+    <div class="contenedor" id="contenedor">
+        <header class="logo">
+            <img class="alura" src="imagenes/Logo-1.png" alt="">
+            <div class="botones">
+                <a href="index.html"><button class="nuevo-juego">  Nuevo Juego</button></a>
+            </div>
+        </header>
+        <section class="juego">
+
+            <h1 >Juego del ahorcado</h1>
+            <p id="resultado" class="ganastePerdiste"></p>
+
+            <div class="ahorcado">
+                <img class="img-ahorcado" id="imagen" src="imagenes/img0.png" alt="">
+            </div>
+
+            <div id="palabra_a_adivinar">
+                
+            </div>
+            
+            <div class="letras" id="letras">
+                <button class="btn-letras">A</button>
+                <button class="btn-letras">B</button>
+                <button class="btn-letras">C</button>
+                <button class="btn-letras">D</button>
+                <button class="btn-letras">E</button>
+                <button class="btn-letras">F</button>
+                <button class="btn-letras">G</button>
+                <button class="btn-letras">H</button>
+                <button class="btn-letras">I</button>
+                <button class="btn-letras">J</button>
+                <button class="btn-letras">K</button>
+                <button class="btn-letras">L</button>
+                <button class="btn-letras">M</button>
+                <button class="btn-letras">N</button>
+                <button class="btn-letras">Ñ</button>
+                <button class="btn-letras">O</button>
+                <button class="btn-letras">P</button>
+                <button class="btn-letras">Q</button>
+                <button class="btn-letras">R</button>
+                <button class="btn-letras">S</button>
+                <button class="btn-letras">T</button>
+                <button class="btn-letras">U</button>
+                <button class="btn-letras">V</button>
+                <button class="btn-letras">W</button>
+                <button class="btn-letras">X</button>
+                <button class="btn-letras">Y</button>
+                <button class="btn-letras">Z</button>
+            </div>
+        </section>
+    </div>
+    
+    <script src="ahorcado.js"></script>
+    
+</body>
+</html>
